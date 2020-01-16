@@ -8,7 +8,7 @@
 export default {
     name: 'SearchBar',
     methods: {
-      onInput: (e) => {
+      onInput(e) {
           this.$emit("termChange", e.target.value);
       }
     }
