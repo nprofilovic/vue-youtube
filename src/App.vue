@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <SearchBar @termChange="onTermChange" />
-    <VideoDetail :video="selectedVideo" />
-    <VideoList @videoSelect="onVideoSelect" :videos="videos" />
+    <div class="row">
+      <VideoDetail :video="selectedVideo" />
+      <VideoList :videos="videos" @videoSelect="onVideoSelect" />
+    </div>
   </div>
 </template>
 
@@ -22,7 +24,7 @@ export default {
   },
   data() {
     return {
-      videos: [],
+      videos: ["ps4"],
       selectedVideo: []
     }
   },

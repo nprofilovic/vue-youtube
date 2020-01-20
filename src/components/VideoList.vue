@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <ul class="list-group list-unstyled">
-      <VideoListItem v-for="video in videos" :key="video.etag" :video="video" @videoSelect="onVideoSelect" />  
-    </ul>
-  </div>
+  <ul class="list-group col-md-4 ">
+    <VideoListItem v-for="video in videos" :key="video.etag" :video="video" @videoSelect="onVideoSelect" />  
+  </ul>
 </template>
 
 <script>
